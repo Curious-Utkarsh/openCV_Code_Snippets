@@ -11,8 +11,8 @@ cam.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
 cam.set(cv2.CAP_PROP_FPS, 30)
 cam.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'MJPG'))
 
-poseDetect=mp.solutions.pose.Pose(False,False,.5,.5)
-#poseDetect=mp.solutions.pose.Pose("Is it static Image"-FALSE,"Do you want Pose of only Upper Body"-if yes-TRUE, if want full body-FALSE,.5,.5)
+poseDetect=mp.solutions.pose.Pose(False,False,True,.5,.5)
+#poseDetect=mp.solutions.pose.Pose("Is it static Image"-FALSE,"Do you want Pose of only Upper Body"-if yes-TRUE, if want full body-FALSE,"smoothData"-TRUE,.5,.5)
 mpDraw=mp.solutions.drawing_utils
 
 while True:
